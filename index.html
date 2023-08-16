@@ -163,6 +163,86 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.timbrown.top/2023/08/16/%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Tim Brown">
+      <meta itemprop="description" content="要做的事还有很多">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tim Weblog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/08/16/%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">解决图片加载问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-08-16 17:17:08 / 修改时间：17:29:02" itemprop="dateCreated datePublished" datetime="2023-08-16T17:17:08+08:00">2023-08-16</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="反思图片无法加载的问题"><a href="#反思图片无法加载的问题" class="headerlink" title="反思图片无法加载的问题"></a>反思图片无法加载的问题</h2><p>通过对md文件的了解，md文件内的图片是以路径形式存储</p>
+<p>与word文件以压缩包存储不一样</p>
+<p>所以，上传在博客内的博文无法正常显示图片</p>
+<p>出现类似于链接一样的文本信息</p>
+<p>那么如何解决图片无法加载的问题呢？</p>
+<h2 id="使用Hexo自带的图片路径"><a href="#使用Hexo自带的图片路径" class="headerlink" title="使用Hexo自带的图片路径"></a>使用Hexo自带的图片路径</h2><p>根据Hexo博客的路径加载方式，发现图片的路径存放在public&#x2F;images中</p>
+<p>在页面引用图片的时候，路径为&#x2F;images&#x2F;图片名</p>
+<p>那么，我们可不可以之间将自己的图片放入到images文件夹内，然后通过md文件内映射呢？</p>
+<p>答案显而易见：</p>
+<p><img src="/images/content-5-1.png"></p>
+<p>通过这样的映射成功将图片显示出来</p>
+<p>但又有了一个新的问题</p>
+<p>在撰写博文的时候，无法查看到自己加入的图片</p>
+<p><img src="/images/content-5-2.png"></p>
+<p>如何解决这个问题呢？</p>
+<h2 id="使用在线图床"><a href="#使用在线图床" class="headerlink" title="使用在线图床"></a>使用在线图床</h2><p>我们都知道，md文件插入图片的方式是通过路径映射</p>
+<p>那么除了本地文件映射，或者是项目内路径名映射</p>
+<p>还能通过在线图床的路径映射！</p>
+<p>理论存在，我可能需要建立一个图床了</p>
+<p>可能的方式是：新建一个Github仓库，用仓库内文件的路径映射相应的内容</p>
+<p>不过Github速度过于感人</p>
+<p>为此我可能需要想一些其他方法将我的图片上传到云端上</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://blog.timbrown.top/2023/08/16/%E9%83%A8%E7%BD%B2%E6%96%B0%E4%B8%BB%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -496,7 +576,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
