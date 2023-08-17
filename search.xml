@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>添加PDF文件支持</title>
+      <link href="/2023/08/17/%E6%B7%BB%E5%8A%A0PDF%E6%96%87%E4%BB%B6%E6%94%AF%E6%8C%81/"/>
+      <url>/2023/08/17/%E6%B7%BB%E5%8A%A0PDF%E6%96%87%E4%BB%B6%E6%94%AF%E6%8C%81/</url>
+      
+        <content type="html"><![CDATA[<h2 id="目前博文的现状"><a href="#目前博文的现状" class="headerlink" title="目前博文的现状"></a>目前博文的现状</h2><p>由于PDF文件转md文件实现起来存在一系列问题</p><p>包括但不限于PDF内图片加载问题、格式问题、以及字体问题等</p><p>目前能想到的方法只有复制粘贴文本到md文件内，而图片则保存到本地</p><p>通过路径映射到md文件内，十分的麻烦</p><p>那么有没有一种工具能直接在博文内显示PDF文件内容呢？</p> <span id="more"></span><h2 id="方法一：通过hexo-pdf工具"><a href="#方法一：通过hexo-pdf工具" class="headerlink" title="方法一：通过hexo-pdf工具"></a>方法一：通过hexo-pdf工具</h2><p>这种方法是最简单也是最快捷的插入PDF文件的方式</p><p>需要先安装hexo-pdf</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-pdf</span><br></pre></td></tr></table></figure><p>然后只需要在博客目录的source文件夹内创建一个新文件夹（例如“pdf”文件夹）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir pdf</span><br></pre></td></tr></table></figure><p>最后，只需要在md文件内映射pdf文件即可</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pdf /pdf/name.pdf %&#125;</span><br></pre></td></tr></table></figure><p>但是这样会有一些问题：</p><p><img src="/images/content-8-1.png"></p><p>文档难以阅读，没有跳转列表</p><p>如何解决这样的问题呢？</p><h2 id="方法二：使用pdf-js"><a href="#方法二：使用pdf-js" class="headerlink" title="方法二：使用pdf.js"></a>方法二：使用pdf.js</h2><p>这是一个基于 Web 标准的通用平台，用于解析和呈现 PDF的js</p><p>使用方法也很简单，前往<a href="https://mozilla.github.io/pdf.js/%EF%BC%8C%E4%B8%8B%E8%BD%BD%E6%9C%80%E6%96%B0%E7%A8%B3%E5%AE%9A%E7%89%88%E6%9C%AC">https://mozilla.github.io/pdf.js/，下载最新稳定版本</a></p><p>然后解压到主题文件夹根目录的source目录下的一个pdfjs文件夹（需要自己创建）</p><p>然后在Hexo文件内配置以下内容</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">skip_render:</span> [<span class="string">myjs/**</span>]</span><br></pre></td></tr></table></figure><p>之后需要修改pdfjs下，web文件内的viewer.js文件内容</p><p>将以下内容注释掉</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exports</span>.<span class="property">PDFViewerApplication</span> = <span class="title class_">PDFViewerApplication</span>;</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">const</span> <span class="variable constant_">HOSTED_VIEWER_ORIGINS</span> = [<span class="string">&quot;null&quot;</span>, <span class="string">&quot;http://mozilla.github.io&quot;</span>, <span class="string">&quot;https://mozilla.github.io&quot;</span>];</span><br><span class="line">  <span class="keyword">var</span> validateFileURL = <span class="keyword">function</span> (<span class="params">file</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (!file) &#123;</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="keyword">const</span> viewerOrigin = <span class="keyword">new</span> <span class="title function_">URL</span>(<span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span>).<span class="property">origin</span> || <span class="string">&quot;null&quot;</span>;</span><br><span class="line">      <span class="keyword">if</span> (<span class="variable constant_">HOSTED_VIEWER_ORIGINS</span>.<span class="title function_">includes</span>(viewerOrigin)) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">const</span> fileOrigin = <span class="keyword">new</span> <span class="title function_">URL</span>(file, <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span>).<span class="property">origin</span>;</span><br><span class="line">      <span class="comment">// if (fileOrigin !== viewerOrigin) &#123;</span></span><br><span class="line">      <span class="comment">//   throw new Error(&quot;file origin does not match viewer&#x27;s&quot;);</span></span><br><span class="line">      <span class="comment">// &#125;//注释掉此处的内容</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (ex) &#123;</span><br><span class="line">      <span class="title class_">PDFViewerApplication</span>.<span class="property">l10n</span>.<span class="title function_">get</span>(<span class="string">&quot;loading_error&quot;</span>).<span class="title function_">then</span>(<span class="function"><span class="params">msg</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="title class_">PDFViewerApplication</span>.<span class="title function_">_documentError</span>(msg, &#123;</span><br><span class="line">          <span class="attr">message</span>: ex?.<span class="property">message</span></span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;);</span><br><span class="line">      <span class="keyword">throw</span> ex;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>最后，在md文档中使用 iframe标签配合pdf.js完成对PDF文件内容的显示</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&#x27;/myjs/pdfjs/web/viewer.html?file=&lt;文件链接(可以是来自网上的，也可以是本地的)&gt;&#x27;</span> <span class="attr">style</span>=<span class="string">&#x27;width:100%;height:100%&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>映射本地的文件可以采用方案一的做法来映射</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> content </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaAPI</title>
       <link href="/2023/08/17/JavaAPI/"/>
       <url>/2023/08/17/JavaAPI/</url>
       
-        <content type="html"><![CDATA[<h1 id="About-JavaAPI"><a href="#About-JavaAPI" class="headerlink" title="About JavaAPI"></a>About JavaAPI</h1><iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/03-JavaAPI.pdf' style='width:100%;height:720px'></iframe>]]></content>
+        <content type="html"><![CDATA[<h1 id="About-JavaAPI"><a href="#About-JavaAPI" class="headerlink" title="About JavaAPI"></a>About JavaAPI</h1><p>如果要阅读pdf文件，请直接点击阅读全文，手机版本网页可能无法正常显示，这可能需要下载pdf文件</p> <span id="more"></span><iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/03-JavaAPI.pdf' style='width:100%;height:720px'></iframe>]]></content>
       
       
       
@@ -27,7 +46,7 @@
       <link href="/2023/08/17/OOP/"/>
       <url>/2023/08/17/OOP/</url>
       
-        <content type="html"><![CDATA[<h1 id="About-OOP"><a href="#About-OOP" class="headerlink" title="About OOP"></a>About OOP</h1><iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/02-OOP.pdf' style='width:100%;height:720px'></iframe>]]></content>
+        <content type="html"><![CDATA[<h1 id="About-OOP"><a href="#About-OOP" class="headerlink" title="About OOP"></a>About OOP</h1><p>如果要阅读pdf文件，请直接点击阅读全文，手机版本网页可能无法正常显示，这可能需要下载pdf文件</p> <span id="more"></span><iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/02-OOP.pdf' style='width:100%;height:720px'></iframe>]]></content>
       
       
       
@@ -46,7 +65,7 @@
       <link href="/2023/08/17/JavaSE/"/>
       <url>/2023/08/17/JavaSE/</url>
       
-        <content type="html"><![CDATA[<h2 id="About-Java"><a href="#About-Java" class="headerlink" title="About Java"></a>About Java</h2><iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/01-JavaSE.pdf' style='width:100%;height:720px'></iframe>]]></content>
+        <content type="html"><![CDATA[<h2 id="About-Java"><a href="#About-Java" class="headerlink" title="About Java"></a>About Java</h2><p>如果要阅读pdf文件，请直接点击阅读全文，手机版本网页可能无法正常显示，这可能需要下载pdf文件</p> <span id="more"></span><iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/01-JavaSE.pdf' style='width:100%;height:720px'></iframe>]]></content>
       
       
       
