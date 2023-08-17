@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>添加社交账户跳转</title>
+      <link href="/2023/08/17/%E6%B7%BB%E5%8A%A0%E7%A4%BE%E4%BA%A4%E8%B4%A6%E6%88%B7%E8%B7%B3%E8%BD%AC/"/>
+      <url>/2023/08/17/%E6%B7%BB%E5%8A%A0%E7%A4%BE%E4%BA%A4%E8%B4%A6%E6%88%B7%E8%B7%B3%E8%BD%AC/</url>
+      
+        <content type="html"><![CDATA[<h2 id="让别人认识我和找到我"><a href="#让别人认识我和找到我" class="headerlink" title="让别人认识我和找到我"></a>让别人认识我和找到我</h2><p>通过几天对他人博客页面布局的了解</p><p>我也逐渐发现我的页面与他人页面的一些细微差别</p><p><img src="/images/content-6-1.png"></p><p>侧边栏是不是内容太少了</p><p>是不是应该加几个其他平台社交账户或者是自己的联系信息</p><span id="more"></span><h2 id="配置社交账户布局"><a href="#配置社交账户布局" class="headerlink" title="配置社交账户布局"></a>配置社交账户布局</h2><p>通过对Hexo布局的阅读，找到了相应的配置</p><p>通过对Next主题配置文件的修改，部署了几个常用社交账户的链接</p><p><img src="/images/content-6-2.png"></p><p>具体在页面的实现为：</p><p><img src="/images/content-6-3.png"></p><p>至此，完成了侧边栏的详细布局</p><p>之后可能会添加更多内容</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> content </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>添加博客背景图片</title>
+      <link href="/2023/08/17/%E6%B7%BB%E5%8A%A0%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/"/>
+      <url>/2023/08/17/%E6%B7%BB%E5%8A%A0%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
+      
+        <content type="html"><![CDATA[<h2 id="博客美化-2"><a href="#博客美化-2" class="headerlink" title="博客美化-2"></a>博客美化-2</h2><p>经过一系列优化之后，博客的页面也逐渐丰富起来</p><p>但是，总感觉缺少了点什么</p><p><img src="/images/content-6-1.png"></p><p>没错！是背景图！</p><p>白茫茫的一片看着怎么可能舒服</p><span id="more"></span><p>添加图片的支持：</p><p><img src="/images/background.jpg"></p><p>这张背景图片截图于Minecraft 基岩版的一个光影，叫做苦力怕光影</p><p>只可惜，因为基岩版渲染引擎变更为“渲染龙”，加之作者自身一系列问题</p><p>原作者不再更新光影</p><p>这样的神作成为了绝唱，让人感到惋惜</p><p>更改后的界面：</p><p><img src="/images/content-6-4.png"></p><p>顺便加上了其他的颜色样式</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> content </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决图片加载问题</title>
+      <link href="/2023/08/16/%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98/"/>
+      <url>/2023/08/16/%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h2 id="反思图片无法加载的问题"><a href="#反思图片无法加载的问题" class="headerlink" title="反思图片无法加载的问题"></a>反思图片无法加载的问题</h2><p>通过对md文件的了解，md文件内的图片是以路径形式存储</p><p>与word文件以压缩包存储不一样</p><p>所以，上传在博客内的博文无法正常显示图片</p><p>出现类似于链接一样的文本信息</p><p>那么如何解决图片无法加载的问题呢？</p><span id="more"></span><h2 id="使用Hexo自带的图片路径"><a href="#使用Hexo自带的图片路径" class="headerlink" title="使用Hexo自带的图片路径"></a>使用Hexo自带的图片路径</h2><p>根据Hexo博客的路径加载方式，发现图片的路径存放在public&#x2F;images中</p><p>在页面引用图片的时候，路径为&#x2F;images&#x2F;图片名</p><p>那么，我们可不可以之间将自己的图片放入到images文件夹内，然后通过md文件内映射呢？</p><p>答案显而易见：</p><p><img src="/images/content-5-1.png"></p><p>通过这样的映射成功将图片显示出来</p><p>但又有了一个新的问题</p><p>在撰写博文的时候，无法查看到自己加入的图片</p><p><img src="/images/content-5-2.png"></p><p>如何解决这个问题呢？</p><h2 id="使用在线图床"><a href="#使用在线图床" class="headerlink" title="使用在线图床"></a>使用在线图床</h2><p>我们都知道，md文件插入图片的方式是通过路径映射</p><p>那么除了本地文件映射，或者是项目内路径名映射</p><p>还能通过在线图床的路径映射！</p><p>理论存在，我可能需要建立一个图床了</p><p>可能的方式是：新建一个Github仓库，用仓库内文件的路径映射相应的内容</p><p>不过Github速度过于感人</p><p>为此我可能需要想一些其他方法将我的图片上传到云端上</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> content </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>部署新主题</title>
+      <link href="/2023/08/16/%E9%83%A8%E7%BD%B2%E6%96%B0%E4%B8%BB%E9%A2%98/"/>
+      <url>/2023/08/16/%E9%83%A8%E7%BD%B2%E6%96%B0%E4%B8%BB%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h2 id="博客美化-1"><a href="#博客美化-1" class="headerlink" title="博客美化-1"></a>博客美化-1</h2><p>为了让原本单调的页面看起来更好看</p><p>我决定采用基于Next的主题模板</p><p>原本的页面长这样：</p><p><img src="/images/content-4-1.png"></p><span id="more"></span><p>经过初步的修改后，页面变成了这样：</p><p><img src="/images/content-4-2.png"></p><p>还不知道博客内的图片能不能正常显示</p><p>希望一切顺利进行！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> content </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>创建自动更新</title>
+      <link href="/2023/08/16/%E5%88%9B%E5%BB%BA%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/"/>
+      <url>/2023/08/16/%E5%88%9B%E5%BB%BA%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="编写自动部署脚本"><a href="#编写自动部署脚本" class="headerlink" title="编写自动部署脚本"></a>编写自动部署脚本</h2><p>本博客基于著名的Hexo编写</p><p>所以，理论上所有的Hexo指令都可以使用</p><p>根据个人对Linux系统的了解以及对Shell命令行指令的学习</p><p>成功给本系统编写了一个自动部署的脚本</p><span id="more"></span><p>该文件存在与博客的根目录，文件名为Upload.sh和Save.sh</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Upload.sh</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">! /bin/bash</span></span><br><span class="line">echo &quot;Starting Upload WeBlog to Network......&quot;</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">echo &quot;Make sure the network is open,uploading......&quot;</span><br><span class="line">hexo d</span><br><span class="line">echo &quot;Success!&quot;</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Save.sh</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">! /bin/bash</span></span><br><span class="line">echo &quot;Saving WeBlog......&quot;</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">echo &quot;Success!&quot;</span><br></pre></td></tr></table></figure><p>第一次编写用于实战的Shell，还是只能写这种基础的命令行</p><p>希望之后加上一些条件判断</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> content </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>尝试部署主题</title>
+      <link href="/2023/08/16/%E5%B0%9D%E8%AF%95%E9%83%A8%E7%BD%B2%E4%B8%BB%E9%A2%98/"/>
+      <url>/2023/08/16/%E5%B0%9D%E8%AF%95%E9%83%A8%E7%BD%B2%E4%B8%BB%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h2 id="尝试添加主题"><a href="#尝试添加主题" class="headerlink" title="尝试添加主题"></a>尝试添加主题</h2><p>为了让博客的页面不单调，我查阅了大量的资料，为自己的博客添加第三方主题</p><p>用以替换本身的样式，拯救本人不会前端与水火之地</p><p>[^不会前端纯属无奈（]: </p><p>如果一切顺利，那么会在下一个博客中成功应用主题内容</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> content </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>For This WeBlog</title>
+      <link href="/2023/08/15/For-This-WeBlog/"/>
+      <url>/2023/08/15/For-This-WeBlog/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一切的开始"><a href="#一切的开始" class="headerlink" title="一切的开始"></a>一切的开始</h2><p>第一次构建和使用属于自己的博客，花费了一天的时间，从创建博客库，到拉取博客页面模板，到编写博客基本配置文件，再到赋予域名解析，以及最后的写下此文档</p><p>真是难以掩盖的激动</p><p>如果没有任何意外情况，此博客将会一直存在</p><p>任何人都可以访问</p><p>博客的地址为: </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">blog.timbrown.top</span><br></pre></td></tr></table></figure><p>如果域名到期，将会提前使用和说明</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Introduction </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
