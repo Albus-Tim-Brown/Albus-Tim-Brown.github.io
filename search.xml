@@ -8,7 +8,7 @@
       <link href="/2023/08/17/JavaAPI/"/>
       <url>/2023/08/17/JavaAPI/</url>
       
-        <content type="html"><![CDATA[<h1 id="About-JavaAPI"><a href="#About-JavaAPI" class="headerlink" title="About JavaAPI"></a>About JavaAPI</h1><div class="pdfobject-container" data-target="/pdf/03-JavaAPI.pdf" data-height="500px"></div>]]></content>
+        <content type="html"><![CDATA[<h1 id="About-JavaAPI"><a href="#About-JavaAPI" class="headerlink" title="About JavaAPI"></a>About JavaAPI</h1><iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/03-JavaAPI.pdf' style='width:100%;height:720px'></iframe>]]></content>
       
       
       
@@ -27,7 +27,7 @@
       <link href="/2023/08/17/OOP/"/>
       <url>/2023/08/17/OOP/</url>
       
-        <content type="html"><![CDATA[<h1 id="About-OOP"><a href="#About-OOP" class="headerlink" title="About OOP"></a>About OOP</h1><div class="pdfobject-container" data-target="/pdf/02-OOP.pdf" data-height="500px"></div>]]></content>
+        <content type="html"><![CDATA[<h1 id="About-OOP"><a href="#About-OOP" class="headerlink" title="About OOP"></a>About OOP</h1><iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/02-OOP.pdf' style='width:100%;height:720px'></iframe>]]></content>
       
       
       
@@ -46,7 +46,7 @@
       <link href="/2023/08/17/JavaSE/"/>
       <url>/2023/08/17/JavaSE/</url>
       
-        <content type="html"><![CDATA[<h2 id="About-Java"><a href="#About-Java" class="headerlink" title="About Java"></a>About Java</h2><iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/01-JavaSE.pdf' style='width:100%;height:100%'></iframe>]]></content>
+        <content type="html"><![CDATA[<h2 id="About-Java"><a href="#About-Java" class="headerlink" title="About Java"></a>About Java</h2><iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/01-JavaSE.pdf' style='width:100%;height:720px'></iframe>]]></content>
       
       
       
