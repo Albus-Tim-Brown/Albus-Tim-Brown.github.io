@@ -6,7 +6,7 @@
   <link href="https://albus-tim-brown.github.io/atom.xml" rel="self"/>
   
   <link href="https://albus-tim-brown.github.io/"/>
-  <updated>2023-08-17T14:09:41.912Z</updated>
+  <updated>2023-08-18T12:02:03.789Z</updated>
   <id>https://albus-tim-brown.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>彻头彻尾的美化</title>
+    <link href="https://albus-tim-brown.github.io/2023/08/18/%E5%BD%BB%E5%A4%B4%E5%BD%BB%E5%B0%BE%E7%9A%84%E7%BE%8E%E5%8C%96/"/>
+    <id>https://albus-tim-brown.github.io/2023/08/18/%E5%BD%BB%E5%A4%B4%E5%BD%BB%E5%B0%BE%E7%9A%84%E7%BE%8E%E5%8C%96/</id>
+    <published>2023-08-18T11:53:38.000Z</published>
+    <updated>2023-08-18T12:02:03.789Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Tim-WeBlog-v1-0&quot;&gt;&lt;a href=&quot;#Tim-WeBlog-v1-0&quot; class=&quot;headerlink&quot; title=&quot;Tim WeBlog v1.0&quot;&gt;&lt;/a&gt;Tim WeBlog v1.0&lt;/h2&gt;&lt;p&gt;经过对他人博客的预览，以及对官方文档的阅读&lt;/p&gt;
+&lt;p&gt;终于将自己的博客完善成自己想要的样式&lt;/p&gt;
+&lt;p&gt;加之一些花里胡哨的功能&lt;/p&gt;
+&lt;p&gt;本人的博客进入了全新的体验&lt;/p&gt;
+&lt;p&gt;即日起，博客发布第一个正式版本，并且正式开始使用！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/content-9-1.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="content" scheme="https://albus-tim-brown.github.io/tags/content/"/>
+    
+  </entry>
   
   <entry>
     <title>添加文件下载</title>
