@@ -6,7 +6,7 @@
   <link href="https://albus-tim-brown.github.io/atom.xml" rel="self"/>
   
   <link href="https://albus-tim-brown.github.io/"/>
-  <updated>2023-08-18T12:02:03.789Z</updated>
+  <updated>2023-08-19T13:33:44.351Z</updated>
   <id>https://albus-tim-brown.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>优化看板娘</title>
+    <link href="https://albus-tim-brown.github.io/2023/08/19/%E4%BC%98%E5%8C%96%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
+    <id>https://albus-tim-brown.github.io/2023/08/19/%E4%BC%98%E5%8C%96%E7%9C%8B%E6%9D%BF%E5%A8%98/</id>
+    <published>2023-08-19T13:01:38.000Z</published>
+    <updated>2023-08-19T13:33:44.351Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;关于看板娘&quot;&gt;&lt;a href=&quot;#关于看板娘&quot; class=&quot;headerlink&quot; title=&quot;关于看板娘&quot;&gt;&lt;/a&gt;关于看板娘&lt;/h2&gt;&lt;p&gt;不知道有没有人注意到页面左下角的这个东西&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/content-10-1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;没错这个就是看板娘，也被人称为桌宠&lt;/p&gt;
+&lt;p&gt;只不过这个是集成在网页里面的，与传统的桌面宠物不太一样&lt;/p&gt;
+&lt;p&gt;Live2D本身是一种应用于电子游戏的绘图渲染技术，通过一系列的连续图像和人物建模来生成一种类似三维模型的二维图像，对于以动画风格为主的冒险游戏来说非常有用。&lt;/p&gt;
+&lt;p&gt;而本页面中的Live2D是应用在一些网页的卡通形象组件，起到美化作用&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="content" scheme="https://albus-tim-brown.github.io/tags/content/"/>
+    
+  </entry>
   
   <entry>
     <title>彻头彻尾的美化</title>
