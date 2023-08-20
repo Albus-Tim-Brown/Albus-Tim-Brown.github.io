@@ -17,6 +17,35 @@
       </tags>
   </entry>
   <entry>
+    <title>JavaAPI</title>
+    <url>/2023/08/17/JavaAPI/</url>
+    <content><![CDATA[<h1 id="About-JavaAPI"><a href="#About-JavaAPI" class="headerlink" title="About JavaAPI"></a>About JavaAPI</h1><p>如果要阅读pdf文件，请直接点击阅读全文，手机版本网页可能无法正常显示，这可能需要下载pdf文件</p>
+<p><a href="/pdf/03-JavaAPI.pdf">点击此处直接下载文件</a></p>
+ <span id="more"></span>
+
+<iframe src="/myjs/pdfjs/web/viewer.html?file=/pdf/03-JavaAPI.pdf" style="width:100%;height:720px"></iframe>
+]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaSE</title>
+    <url>/2023/08/17/JavaSE/</url>
+    <content><![CDATA[<h2 id="About-Java"><a href="#About-Java" class="headerlink" title="About Java"></a>About Java</h2><p>如果要阅读pdf文件，请直接点击阅读全文，手机版本网页可能无法正常显示，这可能需要下载pdf文件</p>
+<p><a href="/pdf/01-JavaSE.pdf">点击此处直接下载文件</a></p>
+ <span id="more"></span>
+
+
+
+<iframe src="/myjs/pdfjs/web/viewer.html?file=/pdf/01-JavaSE.pdf" style="width:100%;height:720px"></iframe>
+
+]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaWeb-Study</title>
     <url>/2023/08/17/Java-Web-Study/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习本文需要先学习JavaSE内容</p>
@@ -107,7 +136,7 @@
 <p>JS程序给服务器发送请求</p>
 <p>浏览器地址栏输入url给服务器发送请求</p>
 <h2 id="四、开发servlet程序："><a href="#四、开发servlet程序：" class="headerlink" title="四、开发servlet程序："></a>四、开发servlet程序：</h2><h3 id="1、用记事本开发，实现Servlet接口"><a href="#1、用记事本开发，实现Servlet接口" class="headerlink" title="1、用记事本开发，实现Servlet接口"></a>1、用记事本开发，实现Servlet接口</h3><h4 id="1-1、在webapps目录中创建目录和文件："><a href="#1-1、在webapps目录中创建目录和文件：" class="headerlink" title="1.1、在webapps目录中创建目录和文件："></a>1.1、在webapps目录中创建目录和文件：</h4><h4 id="1-2、配置CLASSPATH环境变量："><a href="#1-2、配置CLASSPATH环境变量：" class="headerlink" title="1.2、配置CLASSPATH环境变量："></a>1.2、配置CLASSPATH环境变量：</h4><h4 id="1-3、开发编译java程序，实现Servlet接口："><a href="#1-3、开发编译java程序，实现Servlet接口：" class="headerlink" title="1.3、开发编译java程序，实现Servlet接口："></a>1.3、开发编译java程序，实现Servlet接口：</h4><h4 id="1-4、配置web-xml文件："><a href="#1-4、配置web-xml文件：" class="headerlink" title="1.4、配置web.xml文件："></a>1.4、配置web.xml文件：</h4><h4 id="1-5、启动服务器："><a href="#1-5、启动服务器：" class="headerlink" title="1.5、启动服务器："></a>1.5、启动服务器：</h4><h4 id="1-6、给服务器发送请求："><a href="#1-6、给服务器发送请求：" class="headerlink" title="1.6、给服务器发送请求："></a>1.6、给服务器发送请求：</h4><h3 id="2、继承GenericServlet类"><a href="#2、继承GenericServlet类" class="headerlink" title="2、继承GenericServlet类"></a>2、继承GenericServlet类</h3><h3 id="3、使用idea开发，继承HttpServlet类（重点）"><a href="#3、使用idea开发，继承HttpServlet类（重点）" class="headerlink" title="3、使用idea开发，继承HttpServlet类（重点）"></a>3、使用idea开发，继承HttpServlet类（重点）</h3><p> Intellij IDEA2021.1创建Java web项目：<a href="https://blog.csdn.net/llplllll/article/details/116903198">https://blog.csdn.net/llplllll/article/details/116903198</a></p>
-<h4 id="1-1、使用idea工具创建web项目："><a href="#1-1、使用idea工具创建web项目：" class="headerlink" title="1.1、使用idea工具创建web项目："></a>1.1、使用idea工具创建web项目：</h4><img src="C:\Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20220901193954284.png" alt="image-20220901193954284" style="zoom:50%;" />
+<h4 id="1-1、使用idea工具创建web项目："><a href="#1-1、使用idea工具创建web项目：" class="headerlink" title="1.1、使用idea工具创建web项目："></a>1.1、使用idea工具创建web项目：</h4><img src="/.io//Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20220901193954284.png" alt="image-20220901193954284" style="zoom:50%;">
 
 <h4 id="1-2、编写servlet程序："><a href="#1-2、编写servlet程序：" class="headerlink" title="1.2、编写servlet程序："></a>1.2、编写servlet程序：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class ServletDemo01 extends HttpServlet &#123;</span><br><span class="line">    @Override</span><br><span class="line">    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;</span><br><span class="line">        System.out.println(&quot;servlet demo=======&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;</span><br><span class="line">        doGet(req, resp);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -156,14 +185,14 @@
 <p>测试response的功能。截图发群里。</p>
 <h2 id="三、ServletConfig："><a href="#三、ServletConfig：" class="headerlink" title="三、ServletConfig："></a>三、ServletConfig：</h2><h3 id="1、获取ServletConfig对象："><a href="#1、获取ServletConfig对象：" class="headerlink" title="1、获取ServletConfig对象："></a>1、获取ServletConfig对象：</h3><p>HttpServlet类中提供以下方法：</p>
 <p>public <a href="../javax.servlet.ServletConfig.html">ServletConfig</a> <strong>getServletConfig</strong>()</p>
-<h3 id="2、获取标签中的标签中配置的数据："><a href="#2、获取标签中的标签中配置的数据：" class="headerlink" title="2、获取标签中的标签中配置的数据："></a>2、获取<servlet>标签中的<init-param>标签中配置的数据：</h3><p>public String <strong>getInitParameter</strong>(String name) </p>
+<h3 id="2、获取标签中的标签中配置的数据："><a href="#2、获取标签中的标签中配置的数据：" class="headerlink" title="2、获取标签中的标签中配置的数据："></a>2、获取<servlet>标签中的<init-param>标签中配置的数据：</init-param></servlet></h3><p>public String <strong>getInitParameter</strong>(String name) </p>
 <p>只能在该servlet中可以获取配置的数据。</p>
 <h2 id="四、HttpSession：（重点）"><a href="#四、HttpSession：（重点）" class="headerlink" title="四、HttpSession：（重点）"></a>四、HttpSession：（重点）</h2><h3 id="1、获取HttpSession对象："><a href="#1、获取HttpSession对象：" class="headerlink" title="1、获取HttpSession对象："></a>1、获取HttpSession对象：</h3><p>HttpServletRequest对象中提供以下方法：</p>
 <p>public <a href="../javax.servlet.http.HttpSession.html">HttpSession</a> <strong>getSession</strong>()</p>
 <h3 id="2、域对象："><a href="#2、域对象：" class="headerlink" title="2、域对象："></a>2、域对象：</h3><p>setAttribute(String, Object);<br>getAttribute(String);</p>
 <h2 id="五、ServletContext："><a href="#五、ServletContext：" class="headerlink" title="五、ServletContext："></a>五、ServletContext：</h2><h3 id="1、获取ServletContext对象："><a href="#1、获取ServletContext对象：" class="headerlink" title="1、获取ServletContext对象："></a>1、获取ServletContext对象：</h3><p>HttpServlet提供了以下方法：</p>
 <p>public <a href="../javax.servlet.ServletContext.html">ServletContext</a>  <strong>getServletContext</strong>()</p>
-<h3 id="2、获取标签中的标签中的数据"><a href="#2、获取标签中的标签中的数据" class="headerlink" title="2、获取标签中的标签中的数据"></a>2、获取<web-app>标签中的<context-param>标签中的数据</h3><p>public String <strong>getInitParameter</strong>(String name)</p>
+<h3 id="2、获取标签中的标签中的数据"><a href="#2、获取标签中的标签中的数据" class="headerlink" title="2、获取标签中的标签中的数据"></a>2、获取<web-app>标签中的<context-param>标签中的数据</context-param></web-app></h3><p>public String <strong>getInitParameter</strong>(String name)</p>
 <p>可以在所有的servlet中获取配置的数据。</p>
 <h3 id="3、域对象："><a href="#3、域对象：" class="headerlink" title="3、域对象："></a>3、域对象：</h3><p>setAttribute(String, Object);<br>getAttribute(String);</p>
 <p>作业：</p>
@@ -300,11 +329,11 @@
 <p>给某个页面发送请求，在该页面中判断是否登录成功，如果没有成功，则跳转到登录页面；</p>
 <h2 id="五、application（重点）"><a href="#五、application（重点）" class="headerlink" title="五、application（重点）"></a>五、application（重点）</h2><p>类型：ServletContext</p>
 <h3 id="1、域对象："><a href="#1、域对象：" class="headerlink" title="1、域对象："></a>1、域对象：</h3><p>生命期为服务器的启动到关闭。</p>
-<h3 id="2、获取web-xml文件中标签中配置的数据："><a href="#2、获取web-xml文件中标签中配置的数据：" class="headerlink" title="2、获取web.xml文件中标签中配置的数据："></a>2、获取web.xml文件中<context-param>标签中配置的数据：</h3><h3 id="3、获取文件在服务器中的绝对路径："><a href="#3、获取文件在服务器中的绝对路径：" class="headerlink" title="3、获取文件在服务器中的绝对路径："></a>3、获取文件在服务器中的绝对路径：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">getRealPath(&quot;/index.jsp&quot;)</span><br></pre></td></tr></table></figure>
+<h3 id="2、获取web-xml文件中标签中配置的数据："><a href="#2、获取web-xml文件中标签中配置的数据：" class="headerlink" title="2、获取web.xml文件中标签中配置的数据："></a>2、获取web.xml文件中<context-param>标签中配置的数据：</context-param></h3><h3 id="3、获取文件在服务器中的绝对路径："><a href="#3、获取文件在服务器中的绝对路径：" class="headerlink" title="3、获取文件在服务器中的绝对路径："></a>3、获取文件在服务器中的绝对路径：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">getRealPath(&quot;/index.jsp&quot;)</span><br></pre></td></tr></table></figure>
 
 <h3 id="4、案例："><a href="#4、案例：" class="headerlink" title="4、案例："></a>4、案例：</h3><p>在页面中显示该页面被所有的客户端一共访问的次数。把application当作一个计数器使用。</p>
 <h2 id="六、config"><a href="#六、config" class="headerlink" title="六、config"></a>六、config</h2><p>类型：ServletConfig</p>
-<h3 id="1、获取标签中的标签中配置的数据："><a href="#1、获取标签中的标签中配置的数据：" class="headerlink" title="1、获取标签中的标签中配置的数据："></a>1、获取<servlet>标签中的<init-param>标签中配置的数据：</h3><p>只能给<url-pattern>标签中配置的url发送请求时，才能获取到配置的数据。</p>
+<h3 id="1、获取标签中的标签中配置的数据："><a href="#1、获取标签中的标签中配置的数据：" class="headerlink" title="1、获取标签中的标签中配置的数据："></a>1、获取<servlet>标签中的<init-param>标签中配置的数据：</init-param></servlet></h3><p>只能给<url-pattern>标签中配置的url发送请求时，才能获取到配置的数据。</url-pattern></p>
 <p>直接给jsp文件发送请求，则不能获取到配置的数据。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;servlet&gt;</span><br><span class="line">    &lt;servlet-name&gt;conf&lt;/servlet-name&gt;</span><br><span class="line">    &lt;!-- 文件路径前一定要加 / , 该 / 表示web目录--&gt;</span><br><span class="line">    &lt;jsp-file&gt;/conf.jsp&lt;/jsp-file&gt;</span><br><span class="line">    &lt;init-param&gt;</span><br><span class="line">        &lt;param-name&gt;charset&lt;/param-name&gt;</span><br><span class="line">        &lt;param-value&gt;utf-8&lt;/param-value&gt;</span><br><span class="line">    &lt;/init-param&gt;</span><br><span class="line">&lt;/servlet&gt;</span><br><span class="line">&lt;servlet-mapping&gt;</span><br><span class="line">    &lt;servlet-name&gt;conf&lt;/servlet-name&gt;</span><br><span class="line">    &lt;url-pattern&gt;/config&lt;/url-pattern&gt;</span><br><span class="line">&lt;/servlet-mapping&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -432,7 +461,7 @@
 <p>​		last：是否是最后一个元素</p>
 <h1 id="案例：登录案例。MVC模型。"><a href="#案例：登录案例。MVC模型。" class="headerlink" title="案例：登录案例。MVC模型。"></a>案例：登录案例。MVC模型。</h1><h2 id="一、搭建环境"><a href="#一、搭建环境" class="headerlink" title="一、搭建环境"></a>一、搭建环境</h2><p>导入jdbc对应的jar文件。</p>
 <p>创建数据库、创建表、插入 记录</p>
-<p><img src="C:\Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20221013205545138.png" alt="image-20221013205545138"></p>
+<p><img src="/.io//Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20221013205545138.png" alt="image-20221013205545138"></p>
 <p>u_name类型是varchar</p>
 <p>pwd类型是int</p>
 <h2 id="二、登录页面、判断登录成功servlet、成功页面、失败页面"><a href="#二、登录页面、判断登录成功servlet、成功页面、失败页面" class="headerlink" title="二、登录页面、判断登录成功servlet、成功页面、失败页面"></a>二、登录页面、判断登录成功servlet、成功页面、失败页面</h2><h2 id="三、编写servlet"><a href="#三、编写servlet" class="headerlink" title="三、编写servlet"></a>三、编写servlet</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@WebServlet(value = &quot;/login&quot;)</span><br><span class="line">public class LoginServlet extends HttpServlet &#123;</span><br><span class="line">    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            //获取客户端发送的用户名和密码</span><br><span class="line">            String user = request.getParameter(&quot;user&quot;);</span><br><span class="line">            int pwd = Integer.parseInt(request.getParameter(&quot;pwd&quot;));</span><br><span class="line">            //访问数据库</span><br><span class="line">            Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);</span><br><span class="line">            String url = &quot;jdbc:mysql://localhost:3306/wang?serverTimezone=GMT&amp;characterEncoding=utf8&quot;;</span><br><span class="line">            String name = &quot;root&quot;;</span><br><span class="line">            String password = &quot;root&quot;;</span><br><span class="line">            Connection connection = DriverManager.getConnection(url, name, password);</span><br><span class="line">            String sql = &quot;SELECT count(*) from `user`\n&quot; +</span><br><span class="line">                    &quot;where u_name=? and pwd=?&quot;;</span><br><span class="line">            PreparedStatement ps = connection.prepareStatement(sql);</span><br><span class="line">            ps.setString(1, user);</span><br><span class="line">            ps.setInt(2, pwd);</span><br><span class="line">            ResultSet set = ps.executeQuery();</span><br><span class="line">            int count = 0;</span><br><span class="line">            if (set.next())&#123;</span><br><span class="line">                count = set.getInt(1);</span><br><span class="line">            &#125;</span><br><span class="line">            //判断是否登录成功</span><br><span class="line">            boolean ok;</span><br><span class="line">            ok = count &gt; 0;</span><br><span class="line">            //根据结果进行跳转</span><br><span class="line">            if (ok)&#123;</span><br><span class="line">                HttpSession session = request.getSession();</span><br><span class="line">                session.setAttribute(&quot;user&quot;, user);</span><br><span class="line">                response.sendRedirect(&quot;/lesson/ok.jsp&quot;);</span><br><span class="line">            &#125;else&#123;</span><br><span class="line">                response.sendRedirect(&quot;/lesson/fail.jsp&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;catch (Exception e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException &#123;</span><br><span class="line">        doPost(request, response);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -629,42 +658,13 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaAPI</title>
-    <url>/2023/08/17/JavaAPI/</url>
-    <content><![CDATA[<h1 id="About-JavaAPI"><a href="#About-JavaAPI" class="headerlink" title="About JavaAPI"></a>About JavaAPI</h1><p>如果要阅读pdf文件，请直接点击阅读全文，手机版本网页可能无法正常显示，这可能需要下载pdf文件</p>
-<p><a href="/pdf/03-JavaAPI.pdf">点击此处直接下载文件</a></p>
- <span id="more"></span>
-
-<iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/03-JavaAPI.pdf' style='width:100%;height:720px'></iframe>
-]]></content>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaSE</title>
-    <url>/2023/08/17/JavaSE/</url>
-    <content><![CDATA[<h2 id="About-Java"><a href="#About-Java" class="headerlink" title="About Java"></a>About Java</h2><p>如果要阅读pdf文件，请直接点击阅读全文，手机版本网页可能无法正常显示，这可能需要下载pdf文件</p>
-<p><a href="/pdf/01-JavaSE.pdf">点击此处直接下载文件</a></p>
- <span id="more"></span>
-
-
-
-<iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/01-JavaSE.pdf' style='width:100%;height:720px'></iframe>
-
-]]></content>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>OOP</title>
     <url>/2023/08/17/OOP/</url>
     <content><![CDATA[<h1 id="About-OOP"><a href="#About-OOP" class="headerlink" title="About OOP"></a>About OOP</h1><p>如果要阅读pdf文件，请直接点击阅读全文，手机版本网页可能无法正常显示，这可能需要下载pdf文件</p>
 <p><a href="/pdf/02-OOP.pdf">点击此处直接下载文件</a></p>
  <span id="more"></span>
 
-<iframe src='/myjs/pdfjs/web/viewer.html?file=/pdf/02-OOP.pdf' style='width:100%;height:720px'></iframe>
+<iframe src="/myjs/pdfjs/web/viewer.html?file=/pdf/02-OOP.pdf" style="width:100%;height:720px"></iframe>
 ]]></content>
       <tags>
         <tag>Java</tag>
@@ -687,7 +687,7 @@
 <p>一个是没有心思折腾这些东西，另一个是怕API不安全</p>
 <h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>首先需要去下载源代码，解压，并复制到博客主题目录的source目录下，将文件夹名字更改为live2d-widget</p>
 <p>其次还需要下载API的源代码，或者自己fork一份项目，通过git push 到你的仓库中，或者跟上面一样，复制到source目录下也可以，只不过Github访问可能会比较满</p>
-<p>紧接着，需要在博客主题目录的layout文件夹下，修改_layout.swig文件，在“<body>”标签的上面加入：</p>
+<p>紧接着，需要在博客主题目录的layout文件夹下，修改_layout.swig文件，在“<body>”标签的上面加入：</body></p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/live2d-widget/autoload.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>其中，这个路径名就是刚才source目录下的autoload.js文件</p>
@@ -732,6 +732,23 @@
 ]]></content>
       <tags>
         <tag>content</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>可爱猫猫</title>
+    <url>/2023/08/20/%E5%8F%AF%E7%88%B1%E7%8C%AB%E7%8C%AB/</url>
+    <content><![CDATA[<h2 id="校园里的猫猫"><a href="#校园里的猫猫" class="headerlink" title="校园里的猫猫"></a>校园里的猫猫</h2><p>暑假待学校很久了</p>
+<p>因为学校里留校的人很少，所以他们的身影也变得随处可见</p>
+<p>时不时在晚上离开实验室的路上出现</p>
+<img src="images/content-11-7.jpg" alt="content-11-7" style="zoom:33%;">
+
+ <span id="more"></span>
+
+<p>不怕人的猫猫</p>
+<img src="images/content-11-6.jpg" alt="content-11-7" style="zoom:33%;">
+]]></content>
+      <tags>
+        <tag>daily</tag>
       </tags>
   </entry>
   <entry>
@@ -1016,7 +1033,7 @@
 <h2 id="三、UML图：（重点）"><a href="#三、UML图：（重点）" class="headerlink" title="三、UML图：（重点）"></a>三、UML图：（重点）</h2><p>UML：Unified  Modeling  Language   统一建模语言。</p>
 <p>UML图描述类和接口的结构，以及类与类、类与接口、接口与接口之间的关系。</p>
 <p>例子：</p>
-<img src="C:\Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20220829174745299.png" alt="image-20220829174745299" style="zoom:50%;" />
+<img src="/.io//Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20220829174745299.png" alt="image-20220829174745299" style="zoom:50%;">
 
 <p>class  Person{</p>
 <p>​	public int id；</p>
@@ -1025,7 +1042,7 @@
 <p>​	float score;</p>
 <p>​	public void add(int a, int b){}</p>
 <p>}</p>
-<img src="C:\Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20220829180131280.png" alt="image-20220829180131280" style="zoom:50%;" />
+<img src="/.io//Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20220829180131280.png" alt="image-20220829180131280" style="zoom:50%;">
 
 <p>interface  USB{</p>
 <p>​	int WIDTH &#x3D; 10;</p>
@@ -1205,7 +1222,7 @@
 <p>传统方式：</p>
 <p>一个方法无法返回多种类型。</p>
 <p>工厂模式：</p>
-<p><img src="C:\Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20220920165309827.png" alt="image-20220920165309827"></p>
+<p><img src="/.io//Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20220920165309827.png" alt="image-20220920165309827"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//接口</span><br><span class="line">interface Shape&#123;</span><br><span class="line">    public void draw();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//三个实现了Shape接口的实现类</span><br><span class="line">class Circle implements Shape&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void draw() &#123;</span><br><span class="line">        System.out.println(&quot;我是圆形对象，可以画圆形&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class Square implements Shape&#123;</span><br><span class="line">    public void draw() &#123;</span><br><span class="line">        System.out.println(&quot;我是方形对象，可以画方形&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class Rectangle implements Shape&#123;</span><br><span class="line">    public void draw() &#123;</span><br><span class="line">        System.out.println(&quot;我是三角形形对象，可以画三角形形&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//工厂类，创建实现了Shape接口的类对象</span><br><span class="line">class ShapeFactory&#123;</span><br><span class="line">    public Shape getShape(String name)&#123;</span><br><span class="line">        //必须先判断name是否为null，否则，执行name.equals(&quot;circle&quot;)，会出现空指针异常</span><br><span class="line">        if (name == null)</span><br><span class="line">            return null;</span><br><span class="line">        switch (name)&#123;</span><br><span class="line">            case &quot;circle&quot;:</span><br><span class="line">                return new Circle();</span><br><span class="line">            case &quot;square&quot;:</span><br><span class="line">                return new Square();</span><br><span class="line">            case &quot;rectangle&quot;:</span><br><span class="line">                return new Rectangle();</span><br><span class="line">            default:</span><br><span class="line">                return null;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//测试类</span><br><span class="line">public class FactoryPattenDemo &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        ShapeFactory factory = new ShapeFactory();</span><br><span class="line">        Shape shape;</span><br><span class="line">        shape = factory.getShape(&quot;circle&quot;);</span><br><span class="line">        shape.draw();</span><br><span class="line">        shape = factory.getShape(&quot;square&quot;);</span><br><span class="line">        shape.draw();</span><br><span class="line">        shape = factory.getShape(&quot;rectangle&quot;);</span><br><span class="line">        shape.draw();</span><br><span class="line">        shape = factory.getShape(null);</span><br><span class="line">        if (shape == null)</span><br><span class="line">            System.out.println(&quot;没有创建图形对象&quot;);</span><br><span class="line">        shape = factory.getShape(&quot;aaa&quot;);</span><br><span class="line">        if (shape == null)</span><br><span class="line">            System.out.println(&quot;没有创建图形对象&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>作业：</p>
@@ -1215,7 +1232,7 @@
 <p>抽象工厂模式是围绕一个超级工厂创建其他工厂，该超级工厂又其他工厂的工厂。</p>
 <p>应用：如QQ换皮肤</p>
 <h2 id="二、范例：-1"><a href="#二、范例：-1" class="headerlink" title="二、范例："></a>二、范例：</h2><p>功能：定义对象，创建形状（三角形、圆形、方形）、颜色（红色、绿色、蓝色）。</p>
-<p><img src="C:\Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20220922154043925.png" alt="image-20220922154043925"></p>
+<p><img src="/.io//Users\wangchao\AppData\Roaming\Typora\typora-user-images\image-20220922154043925.png" alt="image-20220922154043925"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//定义图形类</span><br><span class="line">interface Shape&#123;</span><br><span class="line">    public void draw();</span><br><span class="line">&#125;</span><br><span class="line">class Circle implements Shape&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void draw() &#123;</span><br><span class="line">        System.out.println(&quot;我是圆形，我会画圆形&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class Square implements Shape&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void draw() &#123;</span><br><span class="line">        System.out.println(&quot;我是方形，我会画方形&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class Rectangle implements Shape&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void draw() &#123;</span><br><span class="line">        System.out.println(&quot;我是三角形，我会画三角形&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//定义颜色类</span><br><span class="line">interface Color&#123;</span><br><span class="line">    public void fill();</span><br><span class="line">&#125;</span><br><span class="line">class Red implements Color&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void fill() &#123;</span><br><span class="line">        System.out.println(&quot;我是红色，我会填充红色&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class Green implements Color&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void fill() &#123;</span><br><span class="line">        System.out.println(&quot;我是绿色，我会填充绿色&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class Blue implements Color&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void fill() &#123;</span><br><span class="line">        System.out.println(&quot;我是蓝色，我会填充蓝色&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//定义抽象工厂类</span><br><span class="line">abstract class AbstractFactory&#123;</span><br><span class="line">    public Shape getShape(String name) &#123;</span><br><span class="line">        return null;</span><br><span class="line">    &#125;</span><br><span class="line">    public Color getColor(String name) &#123;</span><br><span class="line">        return null;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//定义图形工厂类</span><br><span class="line">class ShapeFactory extends AbstractFactory&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public Shape getShape(String name) &#123;</span><br><span class="line">        if (name == null)</span><br><span class="line">            return null;</span><br><span class="line">        switch (name)&#123;</span><br><span class="line">            case &quot;circle&quot;:</span><br><span class="line">                return new Circle();</span><br><span class="line">            case &quot;square&quot;:</span><br><span class="line">                return new Square();</span><br><span class="line">            case &quot;rectangle&quot;:</span><br><span class="line">                return new Rectangle();</span><br><span class="line">            default:</span><br><span class="line">                return null;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//定义颜色工厂类</span><br><span class="line">class ColorFactory extends AbstractFactory&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public Color getColor(String name) &#123;</span><br><span class="line">        if (name == null)</span><br><span class="line">            return null;</span><br><span class="line">        switch (name)&#123;</span><br><span class="line">            case &quot;red&quot;:</span><br><span class="line">                return new Red();</span><br><span class="line">            case &quot;green&quot;:</span><br><span class="line">                return new Green();</span><br><span class="line">            case &quot;blue&quot;:</span><br><span class="line">                return new Blue();</span><br><span class="line">            default:</span><br><span class="line">                return null;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//定义超级工厂类</span><br><span class="line">class FactoryProducer&#123;</span><br><span class="line">    public AbstractFactory getFactory(String name)&#123;</span><br><span class="line">        if (name == null)</span><br><span class="line">            return null;</span><br><span class="line">        switch (name)&#123;</span><br><span class="line">            case &quot;shape&quot;:</span><br><span class="line">                return new ShapeFactory();</span><br><span class="line">            case &quot;color&quot;:</span><br><span class="line">                return new ColorFactory();</span><br><span class="line">            default:</span><br><span class="line">                return null;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class AbstractFactoryPatternDemo &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        FactoryProducer factoryProducer = new FactoryProducer();</span><br><span class="line">        AbstractFactory shapeFactory = factoryProducer.getFactory(&quot;shape&quot;);</span><br><span class="line">        Shape circle = shapeFactory.getShape(&quot;circle&quot;);</span><br><span class="line">        circle.draw();</span><br><span class="line">        Shape square = shapeFactory.getShape(&quot;square&quot;);</span><br><span class="line">        square.draw();</span><br><span class="line">        Shape rectangle = shapeFactory.getShape(&quot;rectangle&quot;);</span><br><span class="line">        rectangle.draw();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
@@ -1291,7 +1308,7 @@
 <p>这个复杂对象的各个部分会经常出现剧烈的变化，但将他们组合在一起的算法相对稳定。</p>
 <p>将变与不变分离。</p>
 <p>与工厂模式的区别：建造者模式更加关注于零件装配的顺序。</p>
-<h2 id="二、范例：-3"><a href="#二、范例：-3" class="headerlink" title="二、范例："></a>二、范例：</h2><img src="C:\Users\wangchao\Desktop\建造模式.png" alt="建造模式" style="zoom: 50%;" />
+<h2 id="二、范例：-3"><a href="#二、范例：-3" class="headerlink" title="二、范例："></a>二、范例：</h2><img src="/.io//Users\wangchao\Desktop\建造模式.png" alt="建造模式" style="zoom: 50%;">
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//创建条目接口Item</span><br><span class="line">interface Item&#123;</span><br><span class="line">    public String name();</span><br><span class="line">    public float price();</span><br><span class="line">    public String pack();</span><br><span class="line">&#125;</span><br><span class="line">//创建抽象汉堡类Burger</span><br><span class="line">abstract class Burger implements Item&#123;</span><br><span class="line">    public String pack()&#123;</span><br><span class="line">        return &quot;纸盒子&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//创建抽象冷饮类ColdDrink</span><br><span class="line">abstract class ColdDrink implements Item&#123;</span><br><span class="line">    public String pack()&#123;</span><br><span class="line">        return &quot;瓶子&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//创建蔬菜汉堡类VegBurger</span><br><span class="line">class VegBurger extends Burger&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public String name() &#123;</span><br><span class="line">        return &quot;蔬菜汉堡&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    @Override</span><br><span class="line">    public float price() &#123;</span><br><span class="line">        return 5;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//创建鸡肉汉堡类ChickenBurger</span><br><span class="line">class ChickenBurger extends Burger&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public String name() &#123;</span><br><span class="line">        return &quot;鸡肉汉堡&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    @Override</span><br><span class="line">    public float price() &#123;</span><br><span class="line">        return 10;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//创建百事可乐类Pegis</span><br><span class="line">class Pegis extends ColdDrink&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public String name() &#123;</span><br><span class="line">        return &quot;百事可乐&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    @Override</span><br><span class="line">    public float price() &#123;</span><br><span class="line">        return 3;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//创建可口可乐类Coke</span><br><span class="line">class Coke extends ColdDrink&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public String name() &#123;</span><br><span class="line">        return &quot;可口可乐&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    @Override</span><br><span class="line">    public float price() &#123;</span><br><span class="line">        return 4;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//创建套餐类Meal</span><br><span class="line">class Meal&#123;</span><br><span class="line">    private List&lt;Item&gt; list = new ArrayList&lt;&gt;();</span><br><span class="line">    //给套餐中添加条目</span><br><span class="line">    public void addItem(Item item)&#123;</span><br><span class="line">        list.add(item);</span><br><span class="line">    &#125;</span><br><span class="line">    //显示套餐条目的名称</span><br><span class="line">    public void showName()&#123;</span><br><span class="line">        System.out.println(&quot;套餐商品名：&quot;);</span><br><span class="line">        for (Item item: list)&#123;</span><br><span class="line">            String name = item.name();</span><br><span class="line">            System.out.println(&quot;\t&quot; + name);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    //显示套餐的总价格</span><br><span class="line">    public void showPrice()&#123;</span><br><span class="line">        System.out.print(&quot;套餐价格：&quot;);</span><br><span class="line">        float total = 0;</span><br><span class="line">        for (Item item: list)&#123;</span><br><span class="line">            float price = item.price();</span><br><span class="line">            total += price;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(total);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//创建生产套餐类MealBuilder</span><br><span class="line">class MealBuilder&#123;</span><br><span class="line">    //生产套餐一</span><br><span class="line">    public Meal builderMeal01()&#123;</span><br><span class="line">        Meal meal = new Meal();</span><br><span class="line">        meal.addItem(new ChickenBurger());</span><br><span class="line">        meal.addItem(new Coke());</span><br><span class="line">        return  meal;</span><br><span class="line">    &#125;</span><br><span class="line">    //生产套餐二</span><br><span class="line">    public Meal builderMeal02()&#123;</span><br><span class="line">        Meal meal = new Meal();</span><br><span class="line">        meal.addItem(new VegBurger());</span><br><span class="line">        meal.addItem(new Coke());</span><br><span class="line">        meal.addItem(new Pegis());</span><br><span class="line">        return meal;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class BuilerPatternDemo &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        MealBuilder builder = new MealBuilder();</span><br><span class="line">        Meal meal;</span><br><span class="line"></span><br><span class="line">        meal = builder.builderMeal01();</span><br><span class="line">        meal.showName();</span><br><span class="line">        meal.showPrice();</span><br><span class="line"></span><br><span class="line">        meal = builder.builderMeal02();</span><br><span class="line">        meal.showName();</span><br><span class="line">        meal.showPrice();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
