@@ -1,0 +1,25 @@
+/* 全局默认鼠标指针 */
+body,
+html {
+    cursor: url('/css/mouse/normal.cur'),auto !important;
+}
+/*!* 悬停图片时的鼠标指针 *!*/
+img {
+    cursor: url('/css/mouse/move.cur'), auto !important;
+}
+/* 选择链接标签时的鼠标指针 */
+a:hover,#site-name:hover {
+    cursor: url('/css/mouse/Link_Select.cur'), auto !important;
+}
+/*!* 选择代码框展开和复制按钮时的鼠标指针 *!*/
+.copy-button:hover,.expand:hover {
+    cursor: url('/css/mouse/Code_Select.cur'), auto !important;
+}
+/* 选中输入框时的鼠标指针 */
+input:hover, textarea:hover {
+    cursor: url('/css/mouse/Text_Select.cur'), auto;
+}
+/* 悬停非链接文本时的鼠标指针 */
+h1,h2,h3,h4,h5,h6,#subtitle,.content,.line,.post-content p,.post-content li{
+    cursor: url('/css/mouse/Text_Select.cur'), auto;
+}

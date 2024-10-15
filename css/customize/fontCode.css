@@ -1,0 +1,6 @@
+@font-face {
+    /*字体名称CascadiaCode*/
+    font-family: 'CascadiaCode';
+    font-display: swap;
+    src: url('../CascadiaCodePL.ttf') format("truetype");
+}
