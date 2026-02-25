@@ -1,0 +1,16 @@
+# 设置 JS/CSS 缓存 1 年（需验证 ETag）
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=31536000
+
+# 图片缓存 1 年
+/*.png
+  Cache-Control: public, max-age=31536000
+
+/*.jpg
+  Cache-Control: public, max-age=31536000
+
+/*.webp
+  Cache-Control: public, max-age=31536000
